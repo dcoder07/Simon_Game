@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="./input.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="text-7xl font-bold mt-5" style="font-family: Franklin Gothic Medium"><span>The Simon Game</span></div>
+  <div class="" id="level-title">
+    <h1>Press A Key to Start</h1>
+  </div>
+  <div class=" flex justify-center items-center">
+    <div class="bg-white rounded-2xl absolute bottom-8" style="  height: 37.5em;
+    width: 37.5em;">
+      <div class="rounded-full  translate-x-[10%] translate-y-[10%]" style="  height: 31.25em;
+      width: 31.25em;
+      background-color: #101010;">
+      <div class="rounded-full translate-x-[63%] translate-y-[63%] flex items-center justify-center" style=" height: 13.75em;
+      width: 13.75em;  background-color: #101010;"><span class="text-white font-bold text-5xl level">Hello</span></div>
+        <div>
+          <div id="green" class="btn green">
+          </div>
+          <div id="red" class="btn red">
+          </div>
+          <div id="yellow" class="btn yellow">
+          </div>
+          <div id="blue" class="btn blue">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
