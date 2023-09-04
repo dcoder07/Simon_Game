@@ -7,7 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(()=>{
+$(document).keydown(()=>{
 if(!started){  
   nextSequence();
 
@@ -16,6 +16,15 @@ if(!started){
   started = true;
 }
 });
+$("button").click(()=>{
+  if(!started){  
+    nextSequence();
+  
+    $("#level-title").text("Level - "+level);
+  
+    started = true;
+  }
+  });
 
 $(".btn").click(function (){
   var userChosenColour = $(this).attr("id");
@@ -65,7 +74,7 @@ $("body").addClass("game-over");
 setTimeout(()=>{
 $("body").removeClass("game-over"); 
 },200); 
-$("#level-title").text("Game Over, Press Any Key to Restart"); 
+$("#level-title").text("Game Over, Press Any Key to Restart or Reload the Page");
 startOver(); 
 }
   }
